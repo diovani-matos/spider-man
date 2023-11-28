@@ -5,11 +5,12 @@
     font-family: 'Roboto Flex', sans-serif;
     color: #ffffff;
     list-style: none;
+    
 }
 
 html {
     background-color: #060608;
-     font-size: 62.5%; /* para o tamanho da font ficar 10px como padrão */
+     font-size: 62.5%; /* para o tamanho da font ficar 10px como padrão, considerando que o padrão dela seje 16px */
 }
 
 img {
@@ -67,6 +68,7 @@ header nav a {
     line-height: 150%;
 }
 
+
 header button {
     display: flex;
     align-items: center;
@@ -85,4 +87,158 @@ header button:hover {
     background-color: #ffffff;
     border-color: #ffffff;
     color: #2F2F3B;
+}
+
+/* HERO ------- */
+
+.s-hero {
+    width: 100%;
+    height: 80rem;
+    background: url(../img/bg-hero.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 11.2rem;
+    padding-bottom: 14.3rem;
+}
+
+.s-hero .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.s-hero .left {
+    width: 100%;
+    max-width: 62.2rem;
+}
+
+.s-hero .left .plataform {
+    display: flex;
+    margin-bottom: 2.4rem;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+}
+
+.s-hero .left .plataform span {
+    color: #C0C0CC;
+    background: #1B1B21;
+    font-size: 1.2rem;
+    line-height: 150%; 
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.s-hero .left .plataform strong {
+color: #FFFFFF;
+background-color: #25252E;
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 150%;
+padding: 0.6rem 1rem;
+border-radius: 0px 4px 4px 0px;
+}
+
+.s-hero .left h1 {
+color: #FFF;
+font-size: 5.6rem;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.s-hero .left p {
+color: #FFF;
+font-size: 1.8rem;
+line-height: 150%;
+}
+
+
+.value h3{
+    color: #FFF;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 4.8rem 0 2.2rem 0;
+}
+
+.value .btns{
+    display: flex;
+    align-items: flex-start;
+    gap: 2.2rem;
+    margin-bottom: 7.2rem;
+}
+
+.value .btn-card {
+border-radius: 3.2rem;
+background: #F55827;
+color: #FFF;
+text-align: center;
+font-size: 1.6rem;
+font-weight: 500;
+line-height: 150%;
+padding: 0rem 4rem;
+height: 5.6rem;
+transition: 0.3s ease-out;
+}
+
+.value .btn-card:hover {
+background: #CF3302;
+}
+
+.value .btn-favorite {
+border-radius: 3.2rem;
+border: 3px solid  #2F2F3B;
+transition: 0.3s ease-out;
+}
+
+.value .btn-favorite:hover {
+border-radius: 3.2rem;
+border: 3px solid rgba(255, 255, 255, 0.30);
+background: #FFF;
+}
+
+.left .item-1 {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 1.7rem;
+}
+
+.left .item-2 {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 1.7rem;
+}
+
+.left .item-3 {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.s-hero .right {
+    width: 100%;
+    max-width: 9.5rem;
+    text-align: right;
+    margin-top: 4.3rem;
+
+}
+
+.s-hero .right span {
+border-radius: 0.6rem;
+background: #F09104;
+padding: 1rem;
+color: #FFF;
+font-size: 1.2rem;
+font-weight: 700;
+line-height: 150%;
+
+}
+
+.s-hero .right p {
+margin-top: 1.6rem;
+color: #E1E1E1;
+text-align: right;
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 150%;
 }
