@@ -129,27 +129,27 @@ header button:hover {
 }
 
 .s-hero .left .plataform strong {
-color: #FFFFFF;
-background-color: #25252E;
-font-size: 1.2rem;
-font-weight: 500;
-line-height: 150%;
-padding: 0.6rem 1rem;
-border-radius: 0px 4px 4px 0px;
+    color: #FFFFFF;
+    background-color: #25252E;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 0.6rem 1rem;
+    border-radius: 0px 4px 4px 0px;
 }
 
 .s-hero .left h1 {
-color: #FFF;
-font-size: 5.6rem;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
-}
+    color: #FFF;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    }
 
 .s-hero .left p {
-color: #FFF;
-font-size: 1.8rem;
-line-height: 150%;
+    color: #FFF;
+    font-size: 1.8rem;
+    line-height: 150%;
 }
 
 
@@ -170,32 +170,32 @@ line-height: 150%;
 }
 
 .value .btn-card {
-border-radius: 3.2rem;
-background: #F55827;
-color: #FFF;
-text-align: center;
-font-size: 1.6rem;
-font-weight: 500;
-line-height: 150%;
-padding: 0rem 4rem;
-height: 5.6rem;
-transition: 0.3s ease-out;
+    border-radius: 3.2rem;
+    background: #F55827;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 0rem 4rem;
+    height: 5.6rem;
+    transition: 0.3s ease-out;
 }
 
 .value .btn-card:hover {
-background: #CF3302;
+    background: #CF3302;
 }
 
 .value .btn-favorite {
-border-radius: 3.2rem;
-border: 3px solid  #2F2F3B;
-transition: 0.3s ease-out;
+    border-radius: 3.2rem;
+    border: 3px solid  #2F2F3B;
+    transition: 0.3s ease-out;
 }
 
 .value .btn-favorite:hover {
-border-radius: 3.2rem;
-border: 3px solid rgba(255, 255, 255, 0.30);
-background: #FFF;
+    border-radius: 3.2rem;
+    border: 3px solid rgba(255, 255, 255, 0.30);
+    background: #FFF;
 }
 
 .left .item-1 {
@@ -224,21 +224,224 @@ background: #FFF;
 }
 
 .s-hero .right span {
-border-radius: 0.6rem;
-background: #F09104;
-padding: 1rem;
-color: #FFF;
-font-size: 1.2rem;
-font-weight: 700;
-line-height: 150%;
+    border-radius: 0.6rem;
+    background: #F09104;
+    padding: 1rem;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 150%;
 
 }
 
 .s-hero .right p {
-margin-top: 1.6rem;
-color: #E1E1E1;
-text-align: right;
-font-size: 1.2rem;
-font-weight: 500;
-line-height: 150%;
+    margin-top: 1.6rem;
+    color: #E1E1E1;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+/* LASTAED VIDEOS --------*/
+
+.s-videos {
+    position: relative;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 6.4rem;
+    overflow: hidden;
+}
+
+.s-videos:before {
+    content: '';
+    width: 334px;
+    height: 334px;
+    background: linear-gradient(270deg, #060608 -3.29%, rgba(6, 6, 8, 0.00) 64.25%);
+    position: absolute;
+    top: 8.9rem;
+    right: 0;
+    z-index: 5;
+}
+
+.s-videos .container {
+    position: relative;
+}
+
+.s-videos .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+}
+
+.s-videos .top .swiper-pagination {
+    position: relative;
+    width: auto;
+    bottom: 0;
+}
+
+.s-videos .top .swiper-pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    border-radius: 0;
+    background-color: #2f2f3b;
+    opacity: 1;
+}
+
+.s-videos .top .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+
+.s-videos .top h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.s-videos .card-video {
+    display: block;
+    width: 100%;
+    max-width: 38.3rem;
+}
+
+.s-videos .card-video .thumbnail {
+    position: relative;
+    width: 100%;
+    height: 21.6rem;
+    margin-bottom: 2.2rem;
+}
+
+.s-videos .card-video .thumbnail .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s-videos .card-video .thumbnail:before {
+    content: '';
+    background: url(../img/mask-hover.svg) no-repeat center center;
+    width: 39.1rem;
+    height: 22.2rem;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.s-videos .card-video:hover .thumbnail:before {
+    opacity: 1;
+}
+
+.s-videos .card-video .thumbnail .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -22.5px;
+    margin-left: -22px;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.s-videos .card-video:hover .thumbnail .play-icon {
+    opacity: 1;
+}
+
+.s-videos .card-video span {
+    color: #C0C0CC;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+.s-videos .btn {
+    position: absolute;
+    top: 13.3rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #2F2F3B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: opacity .3s ease;
+}
+
+.s-videos .btn.swiper-button-disabled {
+    opacity: 0;
+}
+
+
+.s-videos .btn-prev {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.s-videos .btn-next {
+    right: 0;
+}
+
+/* FOOTER ------ */
+
+footer {
+    position: relative;
+    padding-top: 9.6rem;
+    padding-bottom: 7.2rem;
+}
+
+footer:before {
+ content: '';
+ width: 100%;
+ height: 1.6rem;
+ background: url(../img/divider.svg) no-repeat center center;
+ position: absolute;
+ top: 0;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 134rem;
+    padding: 7.2rem 11.2rem;
+    gap: 24rem;
+    }
+
+footer .left strong {
+    font-family: 'Mohave', sans-serif;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+}
+
+footer .left p {
+    width: 66.8rem;
+    color: #CECED9;
+    font-size: 1.4rem;
+    line-height: 150%; 
+}
+
+footer .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+footer .right p {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+footer .right img {
+    width: 12.1829rem;
+    height: 2rem;
 }
