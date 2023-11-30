@@ -12,14 +12,17 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <title>Spider Man</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <img src="img/logo.svg" alt="logo" />
+        <img src="img/logo.svg" alt="logo" class="logo"/>
         <nav>
           <a href="">Visão geral</a>
           <a href="">Edições</a>
@@ -32,7 +35,7 @@
 
     <section class="s-hero">
       <div class="container">
-        <div class="left">
+        <div class="left" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <div class="plataform">
             <span>Disponível para</span>
             <strong>PS5</strong>
@@ -56,14 +59,14 @@
           <div class="item-1">
             <img src="img/icon-ps5.svg" alt="icon-ps5" />
             <p>Lançado 20/10/2023</p>
-            <img src="img/elipse.svg" alt="">
+            <img src="img/elipse.svg" alt="" class="elipse">
             <p>Versão para PS5</p>
           </div>
 
           <div class="item-2">
             <img src="img/icon-control.svg" alt="icon-control" />
             <p>1 jogador</p>
-            <img src="img/elipse.svg" alt="">
+            <img src="img/elipse.svg" alt="" class="elipse">
             <p>Compatível com função de vibração e efeito gatilho</p>
           </div>
 
@@ -74,7 +77,7 @@
           
         </div>
 
-        <div class="right">
+        <div class="right" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
           <span>12</span>
           <p>Violência Compras no jogo</p>
         </div>
@@ -137,6 +140,12 @@
         </button>
 
       </div>
+    </section>
+
+    <section class="s-vilao">
+      <h2>O VILÃO MAIS PODEROSO ESTÁ À SOLTA</h2>
+      <p>Domine as habilidades dos dois Spiders para derrotá-lo em um combate épico.</p>
+      <img src="img/scroll-icon.svg" alt="">
     </section>
 
     <footer>

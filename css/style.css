@@ -47,6 +47,7 @@ header {
     top: 0;
     background: rgba(0, 4, 7, 0.90);
     backdrop-filter: blur(4px);
+    z-index: 2023;
 }
 
 header .container {
@@ -66,6 +67,11 @@ header nav a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 150%;
+    transition: color .3s ease;
+}
+
+header nav a:hover {
+    color: #F55827;
 }
 
 
@@ -80,24 +86,39 @@ header button {
     line-height: 150%;
     border: 2px solid #2F2F3B;
     border-radius: 3.2rem;
-    transition: 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
 }
 
 header button:hover {
     background-color: #ffffff;
-    border-color: #ffffff;
-    color: #2F2F3B;
+    color: #101014;
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.30);
 }
 
 /* HERO ------- */
 
 .s-hero {
+    position: relative;
     width: 100%;
     height: 80rem;
     background: url(../img/bg-hero.jpg) center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding-top: 11.2rem;
     padding-bottom: 14.3rem;
+}
+
+.s-hero:after {
+    content: '';
+    width: 100%;
+    height: 21.6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0.00) 100%);
+    z-index: 2;
+    transform: rotate(180deg);
+    pointer-events: none;
 }
 
 .s-hero .container {
@@ -107,6 +128,8 @@ header button:hover {
 }
 
 .s-hero .left {
+    position: relative;
+    z-index: 10;
     width: 100%;
     max-width: 62.2rem;
 }
@@ -173,29 +196,38 @@ header button:hover {
     border-radius: 3.2rem;
     background: #F55827;
     color: #FFF;
-    text-align: center;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 150%;
-    padding: 0rem 4rem;
+    padding: 1.6rem 4rem;
     height: 5.6rem;
-    transition: 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .value .btn-card:hover {
     background: #CF3302;
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.30);
 }
 
 .value .btn-favorite {
-    border-radius: 3.2rem;
-    border: 3px solid  #2F2F3B;
-    transition: 0.3s ease-out;
+    display: flex;
+    width: 5.6rem;
+    height: 5.6rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #2F2F3B;
+    transition: 0.3s ease;
 }
 
 .value .btn-favorite:hover {
-    border-radius: 3.2rem;
-    border: 3px solid rgba(255, 255, 255, 0.30);
-    background: #FFF;
+    background-color: #ffffff;
+    color: #101014;
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.30);
+}
+
+.value .btn-favorite:hover img {
+    filter: invert(1);
 }
 
 .left .item-1 {
@@ -383,6 +415,62 @@ header button:hover {
     right: 0;
 }
 
+/* VILAO -------*/
+
+.s-vilao {
+    position: relative;
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: changeBG 10s infinite linear;
+}
+
+.s-vilao:before {
+    content: '';
+    width: 100%;
+    height: 21.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0.00) 100%);
+    z-index: 2;
+}
+
+.s-vilao:after {
+    content: '';
+    width: 100%;
+    height: 21.6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0.00) 100%);
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+.s-vilao h2 {
+    color: #FFF;
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.s-vilao p {
+    color: #CECED9;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 150%; 
+    margin-bottom: 7.2rem;
+}
+
 /* FOOTER ------ */
 
 footer {
@@ -444,4 +532,156 @@ footer .right p {
 footer .right img {
     width: 12.1829rem;
     height: 2rem;
+}
+
+@keyframes changeBG {
+    0% {
+        background-image: url(../img/bg/01.jpg);
+    }
+    10% {
+        background-image: url(../img/bg/02.jpg);
+    }
+    20% {
+        background-image: url(../img/bg/03.jpg);
+    }
+    30% {
+        background-image: url(../img/bg/04.jpg);
+    }
+    40% {
+        background-image: url(../img/bg/05.jpg);
+    }
+    50% {
+        background-image: url(../img/bg/06.jpg);
+    }
+    60% {
+        background-image: url(../img/bg/07.jpg);
+    }
+    70% {
+        background-image: url(../img/bg/08.jpg);
+    }
+    80% {
+        background-image: url(../img/bg/09.jpg);
+    }
+    90% {
+        background-image: url(../img/bg/10.jpg);
+    }
+    100% {
+        background-image: url(../img/bg/01.jpg);
+    }
+}
+
+@media(max-width: 1200px) {
+    .s-hero {
+        height: auto;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .s-videos {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .s-videos .btn {
+        display: none;
+    }
+
+    .s-vilao {
+        height: 55rem;
+    }
+
+    footer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media(max-width: 991px) {
+
+    header nav {
+        display: none;
+    }
+
+    .s-hero .left {
+        max-width: 100%;
+    }
+    .s-hero .right {
+        display: none;
+    }
+
+}
+
+@media(max-width: 560px) {
+
+    header .logo {
+        max-width: 12.6rem;
+    }
+
+    header button {
+        padding: 0.95rem 2rem;
+    }
+
+    .s-hero {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-size: 1120px;
+        background-position-x: 62%;
+    }
+
+    .s-hero .left h1 {
+        font-size: 4.2rem;
+        max-width: 84%;
+        line-height: 120%;
+    }
+
+    .s-hero .left p {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .s-hero .left .value h3 {
+        margin-bottom: 1rem;
+    }
+
+    .s-hero .left .value {
+        margin-bottom: 4rem;
+    }
+
+
+    .s-hero .left .item-1 {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .s-hero .left .item-1 .elipse {
+        display: none;
+    }
+    .s-hero .left .item-1 p {
+        font-size: 1.4rem;
+    }
+
+    .s-hero .left .item-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .s-hero .left .item-2 .elipse {
+        display: none;
+    }
+
+    .s-hero .left .item-2 p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+
+    .s-hero .left .item-3 {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .s-hero .left .item-3 p {
+        font-size: 1.4rem;
+    }
 }
