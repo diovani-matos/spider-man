@@ -294,6 +294,7 @@ header button:hover {
     top: 8.9rem;
     right: 0;
     z-index: 5;
+    pointer-events: none;
 }
 
 .s-videos .container {
@@ -609,6 +610,21 @@ footer .right img {
         display: none;
     }
 
+    .s-vilao:before,
+    .s-vilao:after {
+        height: 10rem;
+    }
+
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    footer .left {
+        text-align: center;
+    }
+
 }
 
 @media(max-width: 560px) {
@@ -683,5 +699,39 @@ footer .right img {
 
     .s-hero .left .item-3 p {
         font-size: 1.4rem;
+    }
+
+    .s-videos {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .s-vilao {
+        height: auto;
+        padding: 6rem 0;
+        background-size: 900px;
+    }
+
+    .s-vilao h2 {
+        font-size: 3.6rem;
+    }
+
+    .s-vilao p {
+        font-size: 1.6rem;
+        max-width: 300px;
+        margin-bottom: 4rem;
+    }
+
+    footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    footer p {
+        max-width: 300px;
+    }
+
+    footer:before {
+        background-size: 120%;
     }
 }
